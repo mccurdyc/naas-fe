@@ -35,9 +35,17 @@
                 <v-card-title class="yellow--text title justify-center font-weight-bold">
                   Information
                 </v-card-title>
-                <v-card dark color>
-                  <v-card-text>Pricing</v-card-text>
-                  <v-card-text>Roadmap</v-card-text>
+                <v-card height=75% dark color=primary flat>
+                  <v-card-text>
+                    <v-btn flat md>
+                      Pricing
+                    </v-btn>
+                  </v-card-text>
+                  <v-card-text>
+                    <v-btn flat md>
+                      Roadmap
+                    </v-btn>
+                  </v-card-text>
                 </v-card>
               </v-flex>
 
@@ -45,9 +53,17 @@
                 <v-card-title class="yellow--text title justify-center font-weight-bold">
                   Contact Us
                 </v-card-title>
-                <v-card dark color>
-                  <v-card-text>Twitter</v-card-text>
-                  <v-card-text>GitHub</v-card-text>
+                <v-card height=75% dark color=primary flat>
+                  <v-card-text>
+                    <v-btn flat md>
+                      Twitter
+                    </v-btn>
+                  </v-card-text>
+                  <v-card-text>
+                    <v-btn flat md>
+                      GitHub
+                    </v-btn>
+                  </v-card-text>
                 </v-card>
               </v-flex>
 
@@ -55,10 +71,22 @@
                 <v-card-title class="yellow--text title justify-center font-weight-bold">
                   Legal
                 </v-card-title>
-                <v-card dark color=primary.darken>
-                  <v-card-text>Terms of Service</v-card-text>
-                  <v-card-text>Privacy Policy</v-card-text>
-                  <v-card-text>Subprocessors</v-card-text>
+                <v-card height=75% dark color=primary flat>
+                  <v-card-text>
+                    <v-btn flat md>
+                      Terms of Service
+                    </v-btn>
+                  </v-card-text>
+                  <v-card-text>
+                    <v-btn flat md>
+                      Privacy Policy
+                    </v-btn>
+                  </v-card-text>
+                  <v-card-text>
+                    <v-btn flat md>
+                      Subprocessors
+                    </v-btn>
+                  </v-card-text>
                 </v-card>
               </v-flex>
             </v-layout>
@@ -88,3 +116,16 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+button {
+  border: none;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: inline-block;
+  margin: -10px;
+  border-radius: 4px;
+}
+</style>

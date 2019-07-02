@@ -4,10 +4,10 @@ import App from './App.vue'
 import 'vuetify/dist/vuetify.min.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCode, faCodeBranch, faFileCode, faFileContract, faFile, faFileAlt, faList, faCheck, faSearch } from '@fortawesome/free-solid-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faGithub, faCode, faCodeBranch, faFileCode, faFileContract, faFile, faFileAlt, faList, faCheck, faSearch)
+library.add(faGithub, faTwitter, faCode, faCodeBranch, faFileCode, faFileContract, faFile, faFileAlt, faList, faCheck, faSearch)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

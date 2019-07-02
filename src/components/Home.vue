@@ -68,11 +68,13 @@ button {
   border: none;
   color: white;
   text-align: center;
+  text-transform: capitalize;
   text-decoration: none;
   display: inline-block;
   font-size: 40px;
   margin: 20px;
   border-radius: 4px;
 }
+
 
 </style>
