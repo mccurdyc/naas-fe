@@ -4,35 +4,43 @@ Vue.use(Vuetify)
 
 <template>
   <v-app>
-    <v-container ma-5 fill-height fluid grid-list-md>
-        <v-layout row wrap>
-          <v-flex d-flex offset-md2 md8>
-            <v-btn color="#f2777a" dark>
-              <font-awesome-icon class="fa-fw" :icon="['fas', 'file-code']"/> Add CODEOWNERs
+  <v-content>
+    <v-container grid-list-md>
+        <v-layout align-center justify-center>
+          <v-flex md12>
+            <v-btn color="#f2777a" light>
+              <span style="white-space: pre-line;">
+                <font-awesome-icon class="fa-3x" :icon="['fas', 'file-code']"/>
+                Add
+                CODEOWNERs
+              </span>
+            </v-btn>
+            <v-btn color="#99cc99" light>
+              <span style="white-space: pre-line;">
+                <font-awesome-icon class="fa-3x" :icon="['fas', 'file-contract']"/>
+                Add
+                LICENSE
+              </span>
+            </v-btn>
+            <v-btn color="#ffcc66" light>
+              <span style="white-space: pre-line;">
+                <font-awesome-icon class="fa-3x" :icon="['fas', 'list']"/>
+                List
+                Dependencies
+              </span>
+            </v-btn>
+            <v-btn color="#6699cc" light>
+              <span style="white-space: pre-line;">
+                <font-awesome-icon class="fa-3x" :icon="['fas', 'search']"/>
+                Find and
+                Replace Text
+              </span>
             </v-btn>
           </v-flex>
-
-          <v-flex d-flex offset-md2 md8>
-            <v-btn color="#99cc99" dark>
-              <font-awesome-icon class="fa-fw" :icon="['fas', 'file-contract']"/> Add LICENSE
-            </v-btn>
-          </v-flex>
-
-          <v-flex d-flex offset-md2 md8>
-            <v-btn color="#ffcc66" dark>
-              <font-awesome-icon class="fa-fw" :icon="['fas', 'list']"/> List Dependencies
-            </v-btn>
-          </v-flex>
-
-          <v-flex d-flex offset-md2 md8>
-            <v-btn color="#6699cc" dark>
-              <font-awesome-icon class="fa-fw" :icon="['fas', 'search']"/> Find and Replace Text
-            </v-btn>
-          </v-flex>
-
         </v-layout>
       </v-container>
-    </v-app>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
@@ -57,16 +65,20 @@ li {
 a {
   color: #42b983;
 }
+font-awesome-icon {
+  font-size: 50px;
+}
+
+.container {
+  margin: 100px;
+}
+
 button {
-  padding: 1% 0 6% 0;
-  border: none;
-  color: white;
   text-align: center;
   text-transform: capitalize;
-  text-decoration: none;
   display: inline-block;
-  font-size: 40px;
-  margin: 40px 0px 0px 0px;
-  border-radius: 4px;
+  font-size: 30px;
+  padding: 50px 100px 250px 100px;
+  border-radius: 5px;
 }
 </style>
