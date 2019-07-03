@@ -2,8 +2,10 @@
   <v-app>
     <v-toolbar app>
       <v-toolbar-title class="headline text-titlecase">
-        <span>NaaS:</span>
-        <span class="font-weight-light"> Neighbor as a Service</span>
+        <router-link to="/">
+          <span>NaaS:</span>
+          <span class="font-weight-light"> Neighbor as a Service</span>
+        </router-link>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -27,16 +29,16 @@
                     Information
                   </v-card-title>
                   <v-card height=75% dark color=primary flat>
-                    <v-card-text>
-                      <v-btn flat md>
+                    <div class="link">
+                      <router-link to="/pricing">
                         Pricing
-                      </v-btn>
-                    </v-card-text>
-                    <v-card-text>
-                      <v-btn flat md>
+                      </router-link>
+                    </div>
+                    <div class="link">
+                      <router-link to="/roadmap">
                         Roadmap
-                      </v-btn>
-                    </v-card-text>
+                      </router-link>
+                    </div>
                   </v-card>
                 </v-flex>
 
@@ -45,16 +47,16 @@
                     Contact Us
                   </v-card-title>
                   <v-card height=75% dark color=primary flat>
-                    <v-card-text>
-                      <v-btn flat md>
+                    <div class="link">
+                      <a href="https://twitter.com/mccurdycolton" target="_blank">
                         Twitter
-                      </v-btn>
-                    </v-card-text>
-                    <v-card-text>
-                      <v-btn flat md>
+                      </a>
+                    </div>
+                    <div class="link">
+                      <a href="https://github.com/mccurdyc/naas/issues/new" target="_blank">
                         GitHub
-                      </v-btn>
-                    </v-card-text>
+                      </a>
+                      </div>
                   </v-card>
                 </v-flex>
 
@@ -62,22 +64,22 @@
                   <v-card-title class="yellow--text title justify-center font-weight-bold">
                     Legal
                   </v-card-title>
-                  <v-card height=75% dark color=primary flat>
-                    <v-card-text>
-                      <v-btn flat md>
+                  <v-card dark color=primary flat>
+                    <div class="link">
+                      <router-link to="/terms">
                         Terms of Service
-                      </v-btn>
-                    </v-card-text>
-                    <v-card-text>
-                      <v-btn flat md>
+                      </router-link>
+                    </div>
+                    <div class="link">
+                      <router-link to="/privacy-policy">
                         Privacy Policy
-                      </v-btn>
-                    </v-card-text>
-                    <v-card-text>
-                      <v-btn flat md>
+                      </router-link>
+                    </div>
+                    <div class="link">
+                      <router-link to="/subprocessors">
                         Subprocessors
-                      </v-btn>
-                    </v-card-text>
+                      </router-link>
+                    </div>
                   </v-card>
                 </v-flex>
               </v-layout>
@@ -98,14 +100,11 @@ export default {
 </script>
 
 <style scoped>
-button {
-  border: none;
+a {
   color: white;
-  text-align: center;
-  text-transform: capitalize;
   text-decoration: none;
-  display: inline-block;
-  margin: -10px;
-  border-radius: 4px;
+  text-transform: capitalize;
+  margin: 1px;
+  padding: 1px;
 }
 </style>
