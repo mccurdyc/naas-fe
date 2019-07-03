@@ -2,7 +2,7 @@
   <v-app>
     <v-toolbar app>
       <v-toolbar-title class="headline text-titlecase">
-        <router-link to="/">
+        <router-link class="header" to="/">
           <span>NaaS:</span>
           <span class="font-weight-light"> Neighbor as a Service</span>
         </router-link>
@@ -106,5 +106,8 @@ a {
   text-transform: capitalize;
   margin: 1px;
   padding: 1px;
+}
+a.header {
+  color: #515151;
 }
 </style>
