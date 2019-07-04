@@ -4,49 +4,62 @@ Vue.use(Vuetify)
 
 <template>
   <v-app>
-  <v-content>
-    <v-container grid-list-md>
-        <v-layout align-center justify-center>
-          <v-flex md12>
-            <v-btn color="#f2777a" light>
-              <span style="white-space: pre-line;">
-                <font-awesome-icon class="fa-3x" :icon="['fas', 'file-code']"/>
-                Add
-                CODEOWNERs
-              </span>
-            </v-btn>
-            <v-btn color="#99cc99" light>
-              <span style="white-space: pre-line;">
-                <font-awesome-icon class="fa-3x" :icon="['fas', 'file-contract']"/>
-                Add
-                LICENSE
-              </span>
-            </v-btn>
-            <v-btn color="#ffcc66" light>
-              <span style="white-space: pre-line;">
-                <font-awesome-icon class="fa-3x" :icon="['fas', 'list']"/>
-                List
-                Dependencies
-              </span>
-            </v-btn>
-            <v-btn color="#6699cc" light>
-              <span style="white-space: pre-line;">
-                <font-awesome-icon class="fa-3x" :icon="['fas', 'search']"/>
-                Find and
-                Replace Text
-              </span>
-            </v-btn>
-          </v-flex>
-        </v-layout>
-      </v-container>
+    <v-content>
+      <v-layout justify-center>
+        <v-flex xs12 sm6>
+          <v-card>
+            <v-container fluid grid-list-md >
+              <v-layout row wrap>
+                <v-flex
+                  v-for="action in actions"
+                  :key="action.title"
+                  v-bind="{ [`sm${action.flex}`]: true }"
+                >
+                  <v-card>
+                    <v-container grid-list-md>
+                      <v-layout row wrap>
+                        <v-flex pa-3 ma-1>
+                          <font-awesome-icon class="fa-10x" :icon="[`${action.icon_group}`, `${action.icon}`]"/>
+                        </v-flex>
+
+                        <v-flex>
+                          <v-card-title>
+                            <div>
+                              <h2>{{ action.title }}</h2>
+                              <div>{{ action.description }}</div>
+                            </div>
+                          </v-card-title>
+                        </v-flex>
+                      </v-layout>
+                    </v-container>
+
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn icon>
+                        <font-awesome-icon class="fa-1x" :icon="['fas', 'arrow-right']"/>
+                      </v-btn>
+                    </v-card-actions>
+
+                  </v-card>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-card>
+        </v-flex>
+      </v-layout>
     </v-content>
   </v-app>
 </template>
 
 <script>
-export default {
-  name: 'home',
-}
+  export default {
+    name: 'home',
+    data: () => ({
+      actions: [
+        { title: 'Add CODEOWNERs File', icon_group: 'fas', icon: 'file', flex: 6, description: 'Add a CODEOWNERs file to the root of your repositories.'},
+      ]
+    })
+  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -73,6 +86,9 @@ font-awesome-icon {
   margin: 100px;
 }
 
+.font-awesome-icon{
+  margin: 50px;
+}
 button {
   text-align: center;
   text-transform: capitalize;

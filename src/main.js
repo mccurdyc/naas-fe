@@ -2,14 +2,14 @@ import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCode, faCodeBranch, faFileCode, faFileContract, faFile, faFileAlt, faList, faCheck, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faCode, faCodeBranch, faFileCode, faFileContract, faFile, faFileAlt, faList, faCheck, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import App from './App.vue'
 import router from './router'
 
-library.add(faGithub, faTwitter, faCode, faCodeBranch, faFileCode, faFileContract, faFile, faFileAlt, faList, faCheck, faSearch)
+library.add(faGithub, faTwitter, faArrowRight, faCode, faCodeBranch, faFileCode, faFileContract, faFile, faFileAlt, faList, faCheck, faSearch)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
