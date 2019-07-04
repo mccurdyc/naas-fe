@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app dark>
     <v-toolbar app>
       <v-toolbar-title class="headline text-titlecase">
         <router-link class="header" to="/">
@@ -20,15 +20,15 @@
       <router-view></router-view>
     </main>
 
-    <v-footer dark height="auto" color="primary">
+    <v-footer light height="auto" color=white>
         <v-container fluid grid-list-md>
-          <v-card flat tile color="primary" class="white--text text-md-center" >
+          <v-card flat tile color=white class="white--text text-md-center" >
               <v-layout row justify-center>
                 <v-flex md2>
                   <v-card-title class="yellow--text title justify-center font-weight-bold">
                     Information
                   </v-card-title>
-                  <v-card height=75% dark color=primary flat>
+                  <v-card height=75% light color=primary flat>
                     <div class="link">
                       <router-link to="/pricing">
                         Pricing
@@ -84,7 +84,7 @@
                 </v-flex>
               </v-layout>
 
-            <v-card-text class="white--text">
+            <v-card-text>
               &copy;2019 — <strong>Neighbor</strong>
             </v-card-text>
           </v-card>
@@ -104,10 +104,5 @@ a {
   color: white;
   text-decoration: none;
   text-transform: capitalize;
-  margin: 1px;
-  padding: 1px;
-}
-a.header {
-  color: #515151;
 }
 </style>

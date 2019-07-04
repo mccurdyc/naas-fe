@@ -5,7 +5,7 @@ Vue.use(Vuetify)
 <template>
   <v-app>
     <v-content>
-      <v-layout mt-5>
+      <v-layout>
         <v-flex md12 offset-md2>
           <v-container fluid fill-height grid-list-md>
             <v-layout row wrap>
@@ -14,7 +14,7 @@ Vue.use(Vuetify)
                 :key="action.title"
                 v-bind="{ [`md${action.flex}`]: true }"
               >
-                <v-card>
+                <v-card color=white light>
                   <v-container fluid grid-list-md>
                     <v-layout align-center column>
                       <v-flex ma-3>

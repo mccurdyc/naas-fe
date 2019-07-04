@@ -17,18 +17,18 @@ Vue.use(Vuetify, {
   iconfont: 'fa',
   theme: {
     primary: {
-      base: "#515151",
-      darken1: "#2D2D2D"
+      base: "#d3d0c8",
+      darken1: "#747369"
     },
     secondary: {
-      base: "#F2F0EC",
-      darken1: "#D3D0C8"
+      base: "#2d2d2d",
     },
     red: "#F2777A",
     yellow: "#FFCC66",
     blue: "#6699CC",
     purple: "#CC99CC",
-    teal: "#66CCCC"
+    teal: "#66CCCC",
+    white: "#f2f0ec"
   }
 })
 
