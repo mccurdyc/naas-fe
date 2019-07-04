@@ -5,10 +5,10 @@ Vue.use(Vuetify)
 <template>
   <v-app>
     <v-content>
-      <v-layout>
+      <v-layout mt-5>
         <v-flex md12 offset-md2>
           <v-container fluid fill-height grid-list-md>
-            <v-layout row>
+            <v-layout row wrap>
               <v-flex
                 v-for="action in actions"
                 :key="action.title"
@@ -54,6 +54,8 @@ Vue.use(Vuetify)
     name: 'home',
     data: () => ({
       actions: [
+        { title: 'Add CODEOWNERs File', icon_group: 'fas', icon: 'file', flex: 5, description: 'Add a CODEOWNERs file to the root of your repositories.'},
+        { title: 'Add CODEOWNERs File', icon_group: 'fas', icon: 'file', flex: 5, description: 'Add a CODEOWNERs file to the root of your repositories.'},
         { title: 'Add CODEOWNERs File', icon_group: 'fas', icon: 'file', flex: 5, description: 'Add a CODEOWNERs file to the root of your repositories.'},
         { title: 'Add CODEOWNERs File', icon_group: 'fas', icon: 'file', flex: 5, description: 'Add a CODEOWNERs file to the root of your repositories.'},
       ]
