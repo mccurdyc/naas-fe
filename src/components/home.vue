@@ -14,14 +14,14 @@ Vue.use(Vuetify)
                 :key="action.title"
                 v-bind="{ [`md${action.flex}`]: true }"
               >
-                <v-card color=white light>
+                <v-card :color="`${action.color}`" light>
                   <v-container fluid grid-list-md>
                     <v-layout align-center column>
-                      <v-flex ma-3>
+                      <v-flex ma-1>
                         <font-awesome-icon class="fa-10x" :icon="[`${action.icon_group}`, `${action.icon}`]"/>
                       </v-flex>
 
-                      <v-flex ma-3>
+                      <v-flex ma-1>
                         <v-card-title>
                           <div>
                             <h2>{{ action.title }}</h2>
@@ -34,8 +34,8 @@ Vue.use(Vuetify)
 
                   <v-card-actions>
                     <v-spacer></v-spacer>
-                    <v-btn icon>
-                      <font-awesome-icon class="fa-1x" :icon="['fas', 'arrow-right']"/>
+                    <v-btn>
+                      Run
                     </v-btn>
                   </v-card-actions>
 
@@ -54,10 +54,10 @@ Vue.use(Vuetify)
     name: 'home',
     data: () => ({
       actions: [
-        { title: 'Add CODEOWNERs File', icon_group: 'fas', icon: 'file', flex: 5, description: 'Add a CODEOWNERs file to the root of your repositories.'},
-        { title: 'Add CODEOWNERs File', icon_group: 'fas', icon: 'file', flex: 5, description: 'Add a CODEOWNERs file to the root of your repositories.'},
-        { title: 'Add CODEOWNERs File', icon_group: 'fas', icon: 'file', flex: 5, description: 'Add a CODEOWNERs file to the root of your repositories.'},
-        { title: 'Add CODEOWNERs File', icon_group: 'fas', icon: 'file', flex: 5, description: 'Add a CODEOWNERs file to the root of your repositories.'},
+        { title: 'Add CODEOWNERs File', color: 'yellow', icon_group: 'fas', icon: 'file', flex: 5, description: 'Add a CODEOWNERs file to the root of your repositories.'},
+        { title: 'Add LICENSE File', color: 'red', icon_group: 'fas', icon: 'file-contract', flex: 5, description: 'Add a CODEOWNERs file to the root of your repositories.'},
+        { title: 'List Dependencies', color: 'blue', icon_group: 'fas', icon: 'list', flex: 5, description: 'Add a CODEOWNERs file to the root of your repositories.'},
+        { title: 'Find and Replace Text', color: 'teal', icon_group: 'fas', icon: 'search', flex: 5, description: 'Add a CODEOWNERs file to the root of your repositories.'},
       ]
     })
   }

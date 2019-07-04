@@ -28,7 +28,7 @@
                   <v-card-title class="yellow--text title justify-center font-weight-bold">
                     Information
                   </v-card-title>
-                  <v-card height=75% light color=primary flat>
+                  <v-card height=75% light color=white flat>
                     <div class="link">
                       <router-link to="/pricing">
                         Pricing
@@ -46,7 +46,7 @@
                   <v-card-title class="yellow--text title justify-center font-weight-bold">
                     Contact Us
                   </v-card-title>
-                  <v-card height=75% dark color=primary flat>
+                  <v-card height=75% dark color=white flat>
                     <div class="link">
                       <a href="https://twitter.com/mccurdycolton" target="_blank">
                         Twitter
@@ -64,7 +64,7 @@
                   <v-card-title class="yellow--text title justify-center font-weight-bold">
                     Legal
                   </v-card-title>
-                  <v-card dark color=primary flat>
+                  <v-card dark color=white flat>
                     <div class="link">
                       <router-link to="/terms">
                         Terms of Service
@@ -85,7 +85,7 @@
               </v-layout>
 
             <v-card-text>
-              &copy;2019 — <strong>Neighbor</strong>
+              <strong>&copy;2019 — Neighbor</strong>
             </v-card-text>
           </v-card>
         </v-container>
@@ -100,8 +100,13 @@ export default {
 </script>
 
 <style scoped>
-a {
+.header {
   color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+strong, a {
+  color: #2d2d2d;
   text-decoration: none;
   text-transform: capitalize;
 }
