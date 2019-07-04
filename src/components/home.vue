@@ -7,44 +7,42 @@ Vue.use(Vuetify)
     <v-content>
       <v-layout justify-center>
         <v-flex xs12 sm6>
-          <v-card>
-            <v-container fluid grid-list-md >
-              <v-layout row wrap>
-                <v-flex
-                  v-for="action in actions"
-                  :key="action.title"
-                  v-bind="{ [`sm${action.flex}`]: true }"
-                >
-                  <v-card>
-                    <v-container grid-list-md>
-                      <v-layout row wrap>
-                        <v-flex pa-3 ma-1>
-                          <font-awesome-icon class="fa-10x" :icon="[`${action.icon_group}`, `${action.icon}`]"/>
-                        </v-flex>
+          <v-container fluid grid-list-md >
+            <v-layout row wrap>
+              <v-flex
+                v-for="action in actions"
+                :key="action.title"
+                v-bind="{ [`sm${action.flex}`]: true }"
+              >
+                <v-card>
+                  <v-container grid-list-md>
+                    <v-layout row wrap>
+                      <v-flex pa-3 ma-1>
+                        <font-awesome-icon class="fa-10x" :icon="[`${action.icon_group}`, `${action.icon}`]"/>
+                      </v-flex>
 
-                        <v-flex>
-                          <v-card-title>
-                            <div>
-                              <h2>{{ action.title }}</h2>
-                              <div>{{ action.description }}</div>
-                            </div>
-                          </v-card-title>
-                        </v-flex>
-                      </v-layout>
-                    </v-container>
+                      <v-flex>
+                        <v-card-title>
+                          <div>
+                            <h2>{{ action.title }}</h2>
+                            <div>{{ action.description }}</div>
+                          </div>
+                        </v-card-title>
+                      </v-flex>
+                    </v-layout>
+                  </v-container>
 
-                    <v-card-actions>
-                      <v-spacer></v-spacer>
-                      <v-btn icon>
-                        <font-awesome-icon class="fa-1x" :icon="['fas', 'arrow-right']"/>
-                      </v-btn>
-                    </v-card-actions>
+                  <v-card-actions>
+                    <v-spacer></v-spacer>
+                    <v-btn icon>
+                      <font-awesome-icon class="fa-1x" :icon="['fas', 'arrow-right']"/>
+                    </v-btn>
+                  </v-card-actions>
 
-                  </v-card>
-                </v-flex>
-              </v-layout>
-            </v-container>
-          </v-card>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-container>
         </v-flex>
       </v-layout>
     </v-content>
