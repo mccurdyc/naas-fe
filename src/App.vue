@@ -95,7 +95,8 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  app_icon: 'arrow-right'
 }
 </script>
 
