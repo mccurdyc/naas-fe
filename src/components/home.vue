@@ -60,10 +60,10 @@ Vue.use(Vuetify)
     name: 'home',
     data: () => ({
       actions: [
-        { title: 'Add CODEOWNERs File', color: 'yellow', icon_group: 'fas', icon: 'file', flex: 5, description: 'Add a CODEOWNERs file to the root of your repositories.'},
+        { title: 'Add CODEOWNERs File', color: 'yellow', icon_group: 'fas', icon: 'file', flex: 5, description: 'Add a CODEOWNERs file -- with content specified by input to Neighbor -- to the root of your repositories.'},
         { title: 'Add LICENSE File', color: 'red', icon_group: 'fas', icon: 'file-contract', flex: 5, description: 'Add one of supported licenses (e.g., MIT, GNU General Public License [v2.0, v3.0], Apache license 2.0) to the root of your repositories as a LICENSE.[txt, md] file.'},
-        { title: 'List Dependencies', color: 'blue', icon_group: 'fas', icon: 'list', flex: 5, description: 'Add a CODEOWNERs file to the root of your repositories.'},
-        { title: 'Find and Replace Text', color: 'teal', icon_group: 'fas', icon: 'search', flex: 5, description: 'Add a CODEOWNERs file to the root of your repositories.'},
+        { title: 'List Dependencies', color: 'blue', icon_group: 'fas', icon: 'list', flex: 5, description: 'List your project\'s dependencies using one of the supported tools for repository\'s language (e.g., `go list -m all` for Go.).'},
+        { title: 'Find and Replace Text', color: 'teal', icon_group: 'fas', icon: 'search', flex: 5, description: 'Given two strings as input, find all instances of the first string in the repository and replace with the second string.'},
       ]
     })
   }
