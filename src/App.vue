@@ -10,10 +10,10 @@
 
       <v-spacer></v-spacer>
 
-      <router-link to="/login" tag="v-btn">
+      <v-btn v-bind:href="link.url">
         <font-awesome-icon class="fa-fw" :icon="['fab', 'github']"/>
         Sign In With GitHub
-      </router-link>
+      </v-btn>
     </v-toolbar>
 
     <main>
@@ -96,7 +96,12 @@
 <script>
 export default {
   name: 'App',
-  app_icon: 'arrow-right'
+  app_icon: 'arrow-right',
+  data: () => ({
+    link: {
+      url:`https://github.com/login/oauth/authorize?scope=user:email&client_id=${process.env.VUE_APP_GITHUB_CLIENT_ID}`
+    }
+  })
 }
 </script>
 
